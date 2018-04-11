@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DP_Homework2.Entities.Heroes
 {
-    public class Wizard
+    public class Wizard:BaseCharacter
     {
+        public Wizard()
+        {
+            Name = "Wizard";
+        }
+        public override void Show()
+        {
+            base.Show();
+        }
     }
 }

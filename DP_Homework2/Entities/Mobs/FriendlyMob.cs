@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DP_Homework2.Entities.Mobs
 {
-    class FriendlyMob
+    public class FriendlyMob:BaseMob
     {
+        public FriendlyMob()
+        {
+            Name = "Friendly Mob";
+        }
+        public override void Show()
+        {
+            base.Show();
+        }
     }
 }

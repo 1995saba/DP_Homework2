@@ -42,26 +42,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Armors\BaseArmor.cs" />
+    <Compile Include="Entities\Armors\ImprovedArmor.cs" />
+    <Compile Include="Entities\Armors\StandardArmor.cs" />
     <Compile Include="Entities\Heroes\BaseCharacter.cs" />
     <Compile Include="Entities\Heroes\Warrior.cs" />
     <Compile Include="Entities\Heroes\Wizard.cs" />
+    <Compile Include="Entities\Mobs\BaseMob.cs" />
     <Compile Include="Entities\Mobs\EnemyMob.cs" />
     <Compile Include="Entities\Mobs\FriendlyMob.cs" />
     <Compile Include="Entities\Mobs\NeutralMob.cs" />
-    <Compile Include="Entities\Skills\Freeze.cs" />
-    <Compile Include="Entities\Skills\Skill.cs" />
+    <Compile Include="Entities\Skills\FireSightSkill.cs" />
+    <Compile Include="Entities\Skills\FreezeTimeSkill.cs" />
+    <Compile Include="Entities\Skills\BaseSkill.cs" />
+    <Compile Include="Entities\Skills\HighSpeedSkill.cs" />
+    <Compile Include="Entities\Skills\InvisibilitySkill.cs" />
+    <Compile Include="Entities\Skills\SuperPowerSkill.cs" />
     <Compile Include="Entities\Stock.cs" />
-    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Entities\Weapons\BaseWeapon.cs" />
+    <Compile Include="Entities\Weapons\Hammer.cs" />
+    <Compile Include="Entities\Weapons\MachineGun.cs" />
+    <Compile Include="Factories\IFactory.cs" />
+    <Compile Include="Factories\WarriorFactory.cs" />
+    <Compile Include="Factories\WizardFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\Armors\" />
-    <Folder Include="Entities\Weapons\" />
-    <Folder Include="Factories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

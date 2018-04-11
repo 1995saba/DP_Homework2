@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DP_Homework2.Entities.Mobs
 {
-    class NeutralMob
+    public class NeutralMob:BaseMob
     {
+        public NeutralMob()
+        {
+            Name = "Neutral Mob";
+        }
+        public override void Show()
+        {
+            base.Show();
+        }
     }
 }
